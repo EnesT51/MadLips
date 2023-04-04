@@ -23,16 +23,18 @@
                   $geloof = specialChar($_POST["Geloof"]);
                   $land = specialChar($_POST["Land"]);
                   
-                  echo "<h1>Er heerst paniek....</h1>";
-                  echo "<h4> Enes en zijn luie $huisdier Fluffy wonen in $wonen.<br> 
-                        Enes verveelt zich en verdiept zich in het $geloof.<br> 
-                        $huisdier begint ook te mediteren, maar slaapt eigenlijk gewoon.<br> 
-                        Enes begint te twijfelen, tot zijn $huisdier een vlieg vindt en erop jaagt.<br> 
-                        Enes beseft dat ze niet alles hoeven te begrijpen om gelukkig te zijn maar zouden graag in $land willen wonen.<br>
-                        En $huisdier? Die jaagt gewoon op vliegen.<br> 10 jaar later ontmoet Enes zijn Rolmodel $persoon.<br>
-                        sinds dien spelen zij altijd tijdens verveling $verveling.
-                        </h4>";
-
+                  if($_SERVER["REQUEST_METHOD"] == "POST"){
+                     echo "<h1>Er heerst paniek....</h1>";
+                     echo "<h4> Enes en zijn luie $huisdier Fluffy wonen in $wonen.<br> 
+                           Enes verveelt zich en verdiept zich in het $geloof.<br> 
+                           $huisdier begint ook te mediteren, maar slaapt eigenlijk gewoon.<br> 
+                           Enes begint te twijfelen, tot zijn $huisdier een vlieg vindt en erop jaagt.<br> 
+                           Enes beseft dat ze niet alles hoeven te begrijpen om gelukkig te zijn maar zouden graag in $land willen wonen.<br>
+                           En $huisdier? Die jaagt gewoon op vliegen.<br> 10 jaar later ontmoet Enes zijn Rolmodel $persoon.<br>
+                           sinds dien spelen zij altijd tijdens verveling $verveling.
+                           </h4>";
+                  }
+               
                   function specialChar($data){
 
                      $data = htmlspecialchars($data);

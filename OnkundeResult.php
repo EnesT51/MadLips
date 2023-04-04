@@ -22,17 +22,19 @@
                   $geloof = specialChar($_POST["Geloof"]);
                   $Trouwen = specialChar($_POST["Trouwen"]);
 
-                  echo "<h1>Onkunde</h1>";
+                  if($_SERVER["REQUEST_METHOD"] == "POST"){
+                     echo "<h1>Onkunde</h1>";
 
-                  echo "<h4>Enes heeft altijd van gehouden en heeft de hele wereld over gereisd.<br>
-                  Tijdens haar reis naar $Reizen heeft ze verschillende religies en culturen leren kennen zoals $geloof en ze heeft veel geleerd zoals $Leren.<br>
-                  Op een van zijn reizen ontmoet hij $Trouwen en ze worden verliefd. Ze besluiten om te trouwen en hun leven samen te delen.<br>
-                  Enes realiseert zich dat ze gelukkiger is dan ooit tevoren en beseft dat ze haar ware levenspartner heeft gevonden.<br>
-                  Ze zetten hun reizen samen voort en blijven nieuwe culturen ontdekken en leren van elkaar.<br> 
-                  Over tien jaar ziet Lara zichzelf nog steeds $jaar en gelukkig met zijn vrouw en $Gelukkig,<br>
-                  waarbij ze elkaar blijven inspireren en ondersteunen in hun dromen en doelen.<br>
-                  </h4>";
-
+                     echo "<h4>Enes heeft altijd van gehouden en heeft de hele wereld over gereisd.<br>
+                     Tijdens haar reis naar $Reizen heeft ze verschillende religies en culturen leren kennen zoals $geloof en ze heeft veel geleerd zoals $Leren.<br>
+                     Op een van zijn reizen ontmoet hij $Trouwen en ze worden verliefd. Ze besluiten om te trouwen en hun leven samen te delen.<br>
+                     Enes realiseert zich dat ze gelukkiger is dan ooit tevoren en beseft dat ze haar ware levenspartner heeft gevonden.<br>
+                     Ze zetten hun reizen samen voort en blijven nieuwe culturen ontdekken en leren van elkaar.<br> 
+                     Over tien jaar ziet Lara zichzelf nog steeds $jaar en gelukkig met zijn vrouw en $Gelukkig,<br>
+                     waarbij ze elkaar blijven inspireren en ondersteunen in hun dromen en doelen.<br>
+                     </h4>";
+                  }
+               
                   function specialChar($data){
 
                      $data = htmlspecialchars($data);
