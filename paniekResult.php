@@ -16,14 +16,15 @@
          <section class="Resultaat">
             <?php
                // here is where i will add the dynamic content.
-                  $huisdier = specialChar($_POST["huisdier"]);
-                  $persoon = specialChar($_POST["belangrijkstepersoon"]);
-                  $wonen = specialChar($_POST["Wonen"]);
-                  $verveling = specialChar($_POST["Verveling"]);
-                  $geloof = specialChar($_POST["Geloof"]);
-                  $land = specialChar($_POST["Land"]);
+                  
                   
                   if($_SERVER["REQUEST_METHOD"] == "POST"){
+                     $huisdier = specialChar($_POST["huisdier"]);
+                     $persoon = specialChar($_POST["belangrijkstepersoon"]);
+                     $wonen = specialChar($_POST["Wonen"]);
+                     $verveling = specialChar($_POST["Verveling"]);
+                     $geloof = specialChar($_POST["Geloof"]);
+                     $land = specialChar($_POST["Land"]);
                      echo "<h1>Er heerst paniek....</h1>";
                      echo "<h4> Enes en zijn luie $huisdier Fluffy wonen in $wonen.<br> 
                            Enes verveelt zich en verdiept zich in het $geloof.<br> 

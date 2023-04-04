@@ -15,14 +15,14 @@
          <section class="Resultaat">
             <?php
                // here is where i will add the dynamic content.
-                  $Leren = specialChar($_POST["Leren"]);
-                  $Reizen = specialChar($_POST["Reizen"]);
-                  $jaar = specialChar($_POST["10jaar"]);
-                  $Gelukkig = specialChar($_POST["Gelukkig"]);
-                  $geloof = specialChar($_POST["Geloof"]);
-                  $Trouwen = specialChar($_POST["Trouwen"]);
-
+                  
                   if($_SERVER["REQUEST_METHOD"] == "POST"){
+                     $Leren = specialChar($_POST["Leren"]);
+                     $Reizen = specialChar($_POST["Reizen"]);
+                     $jaar = specialChar($_POST["10jaar"]);
+                     $Gelukkig = specialChar($_POST["Gelukkig"]);
+                     $geloof = specialChar($_POST["Geloof"]);
+                     $Trouwen = specialChar($_POST["Trouwen"]);
                      echo "<h1>Onkunde</h1>";
 
                      echo "<h4>Enes heeft altijd van gehouden en heeft de hele wereld over gereisd.<br>
